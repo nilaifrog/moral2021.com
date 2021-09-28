@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+
+
+html{
+    font-family: 'Montserrat', 'Poppins';
+    font-size: 30px;
+    background-color: #d1d9a6;
+}
+
+h3{
+    font-family: 'Poppins';
+    font-size: 31px;
+    color: #008080;
+    margin-left: .5rem;
+}
+
+h4{
+    font-family: Arial;
+    font-size: 25px;
+    color: black;
+    margin-bottom: .3rem;
+    margin-left: .5rem;
+}
+
+audio{
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1068px){
+    .blog-post{
+        max-width: 80rem;
+    }
+    
+    .blog-post_img{
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width: 868px){
+    .blog-post{
+        max-width: 70rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .blog-post{
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+    
+    .blog-post_img{
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem);
+     }
+}
